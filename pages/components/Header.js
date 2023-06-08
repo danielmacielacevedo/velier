@@ -6,6 +6,7 @@ export default function HeaderGeneral() {
   const menuButtonRef = useRef(null);
   const menuContentRef = useRef(null);
   const headerRef = useRef(null);
+  const logoRef = useRef(null);
   const router = useRouter();
 
   function handleBurgerClick() {
@@ -14,6 +15,8 @@ export default function HeaderGeneral() {
     menuContentRef.current.classList.toggle("Open");
 
     headerRef.current.classList.toggle("Open")
+
+    logoRef.current.classList.toggle('Open')
 
   }
 
@@ -26,10 +29,11 @@ export default function HeaderGeneral() {
         </div> */}
         <div ref={headerRef} className="NavFull">
           <Link href="/">
+            <i ref={logoRef} id="HeaderLogo"></i>
             {/* <img
-              src="/assets/logo-wearevelier.png"
+              src="/assets/wearevelier.png"
               alt="Logo We Are Velier"
-              className={router.pathname === "/" ? "LogoOpacity" : ""}
+              // className={router.pathname === "/" ? "LogoOpacity" : ""}
             /> */}
           </Link>
 

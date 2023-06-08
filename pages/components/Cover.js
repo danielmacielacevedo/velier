@@ -3,7 +3,8 @@ import { motion } from 'framer-motion';
 import Lottie from 'react-lottie';
 import TopIcon from '../../public/assets/icons/animated-icons/top-arrow-hover.json'
 
-const words = [ 'Tu clínica', 'Tu consultorio', 'Tu salón', 'Tu estudio', 'Tu agencia', 'Tu despacho'];
+const words = [ 'CLÍNICA', 'CONSULTORIO', 'SALÓN', 'ESTUDIO', 'AGENCIA', 'DESPACHO'];
+// const words = [ 'Tu clínica', 'Tu consultorio', 'Tu salón', 'Tu estudio', 'Tu agencia', 'Tu despacho'];
 // const words = [ 'tu clínica', 'tu consultorio', 'tu salón', 'tu estudio', 'tu agencia', 'tu despacho'];
 
 export default function Cover() {
@@ -33,7 +34,7 @@ export default function Cover() {
               isClickToPauseDisabled
             />
             {/* <h1>POTENCIAMOS</h1> */}
-            <h1>...potenciamos</h1>
+            <h1>...potenciamos tu</h1>
             <div>
               <motion.div
                 key={index}
@@ -46,7 +47,7 @@ export default function Cover() {
                   fontFamily: 'Poppins', 
                   fontWeight: '700',
                   color: 'var(--velier-color)', 
-                  marginTop: '-4vw', 
+                  marginTop: '-2vw', 
                   textShadow: '5px 5px 100px rgba(0, 0, 0, .4)' 
                 }}
               > 
@@ -66,7 +67,7 @@ export default function Cover() {
               isClickToPauseDisabled
             />
             {/* <h1>POTENCIAMOS</h1> */}
-            <h1>...potenciamos</h1>
+            <h1>...potenciamos tu</h1>
             <div>
               <motion.div
                 key={index}
@@ -79,7 +80,7 @@ export default function Cover() {
                   fontFamily: 'Poppins', 
                   fontWeight: '700',
                   color: 'var(--velier-color)', 
-                  marginTop: '-4vw', 
+                  marginTop: '-2vw', 
                   textShadow: '5px 5px 100px rgba(0, 0, 0, .4)' 
                 }}
               > 
@@ -95,7 +96,7 @@ export default function Cover() {
           display: flex;
           flex-direction: column;
           width: 100%;
-          height: 40vh;
+          height: 50vh;
           min-height: 400px;
           justify-content: center;
           align-items: center;
@@ -114,7 +115,6 @@ export default function Cover() {
         {
           font-size: 4vw;
           font-weight: 300;
-          margin-top: -2vw;
         }
         .MotionDiv
         {

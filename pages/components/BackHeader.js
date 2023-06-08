@@ -11,7 +11,7 @@ export default function BackHeader() {
           @media only screen and (max-width: 800px)
           {
             .BackHeaderContainer {
-              height: 80px;
+              height: 60px;
             }
           }
         `}</style>
