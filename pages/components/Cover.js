@@ -1,7 +1,10 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import Lottie from 'react-lottie';
+import TopIcon from '../../public/assets/icons/animated-icons/top-arrow-hover.json'
 
-const words = [ 'tu clínica', 'tu consultorio', 'tu salón', 'tu estudio', 'tu agencia', 'tu despacho'];
+const words = [ 'Tu clínica', 'Tu consultorio', 'Tu salón', 'Tu estudio', 'Tu agencia', 'Tu despacho'];
+// const words = [ 'tu clínica', 'tu consultorio', 'tu salón', 'tu estudio', 'tu agencia', 'tu despacho'];
 
 export default function Cover() {
   const [index, setIndex] = useState(0);
@@ -18,9 +21,19 @@ export default function Cover() {
     <>
       <div className='CoverContainer'>
         <div className='TitleCoverContainer'>
-          <h1>POTENCIAMOS</h1>
-          {/* <h1>Potenciamos</h1> */}
           <div className='MotionDiv Desktop'>
+            <Lottie
+              options={{
+                animationData: TopIcon,
+                loop: false,
+                autoplay: true,
+              }}
+              width='4vw'
+              height='4vw'
+              isClickToPauseDisabled
+            />
+            {/* <h1>POTENCIAMOS</h1> */}
+            <h1>...potenciamos</h1>
             <div>
               <motion.div
                 key={index}
@@ -34,7 +47,7 @@ export default function Cover() {
                   fontWeight: '700',
                   color: 'var(--velier-color)', 
                   marginTop: '-4vw', 
-                  textShadow: '5px 5px 100px rgba(0, 0, 0, 0.5)' 
+                  textShadow: '5px 5px 100px rgba(0, 0, 0, .4)' 
                 }}
               > 
               {words[index]}
@@ -42,6 +55,18 @@ export default function Cover() {
             </div>
           </div>
           <div className='MotionDiv Mobile'>
+            <Lottie
+              options={{
+                animationData: TopIcon,
+                loop: false,
+                autoplay: true,
+              }}
+              width='8vw'
+              height='8vw'
+              isClickToPauseDisabled
+            />
+            {/* <h1>POTENCIAMOS</h1> */}
+            <h1>...potenciamos</h1>
             <div>
               <motion.div
                 key={index}
@@ -55,7 +80,7 @@ export default function Cover() {
                   fontWeight: '700',
                   color: 'var(--velier-color)', 
                   marginTop: '-4vw', 
-                  textShadow: '5px 5px 100px rgba(0, 0, 0, 0.5)' 
+                  textShadow: '5px 5px 100px rgba(0, 0, 0, .4)' 
                 }}
               > 
               {words[index]}
@@ -70,7 +95,7 @@ export default function Cover() {
           display: flex;
           flex-direction: column;
           width: 100%;
-          height: 80vh;
+          height: 40vh;
           min-height: 400px;
           justify-content: center;
           align-items: center;
@@ -89,6 +114,15 @@ export default function Cover() {
         {
           font-size: 4vw;
           font-weight: 300;
+          margin-top: -2vw;
+        }
+        .MotionDiv
+        {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          justify-content: center;
+          align-items: center;
         }
         .MotionDiv.Mobile
         {
@@ -96,6 +130,10 @@ export default function Cover() {
         }
         @media only screen and (max-width: 800px)
         {
+          .CoverContainer
+          {
+            min-height: 300px;
+          }
           .TitleCoverContainer h1
           {
             font-size: 6vw;

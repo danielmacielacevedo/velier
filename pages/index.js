@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import Cover from './components/Cover'
 import Formulario from './components/Formulario'
+import Header from './components/Header'
+import BackHeader from './components/BackHeader'
 
 export default function Home() {
   return (
@@ -11,6 +13,8 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Header />
+      <BackHeader />
       <Cover />
       <Formulario />
     </>

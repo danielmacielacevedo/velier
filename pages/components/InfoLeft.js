@@ -1,34 +1,27 @@
-import { useEffect } from 'react';
+import Link from "next/link";
 
-export default function Formulario() {
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.src = 'https://assets.calendly.com/assets/external/widget.js';
-    script.async = true;
-    document.body.appendChild(script);
-
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
+export default function InfoLeft() {
 
   return (
     <>
       <div className='FormContainer'>
-        <div className='FormContent'>
-          <div
-            className="calendly-inline-widget"
-            data-url="https://calendly.com/velier/agendar-cita?hide_event_type_details=1&hide_gdpr_banner=1&primary_color=0065ff&background_color=fff"
-          ></div>
+        <div className='ImageContent'>
+          <img src='https://images.unsplash.com/photo-1631248055158-edec7a3c072b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1461&q=80' />
         </div>
-        <div className='FormContainerDetails'>
-          <span>Permite a tus clientes elegir su cita!</span> 
-          <ul>
-            <li><p>Todas las citas se van agendando en tu calendario de <i id='small-text'>Google</i> automaticamente.</p></li>
-            <li><p>Tus clientes podran ver las citas disponibles segun tu calendario y horario de servicio.</p></li>
-            <li><p>Enviamos mensajes SMS a tus clientes antes de la cita agendada como recordatorio.</p></li>
-            <li><p>Ahorra tiempo valioso.</p></li>
-          </ul>
+        <div className="InfoContent">
+          <div className='FormContainerDetails'>
+            <span>Permite a tus clientes elegir su cita!</span> 
+            <ul>
+              <li><p>Ahorra tiempo valioso agendando a tus clientes.</p></li>
+              <li><p>Todas las citas se van agendando en tu calendario de <i id='small-text'>Google</i>.</p></li>
+              <li><p>Tus clientes podran ver las citas disponibles segun tu horario.</p></li>
+            </ul>
+          <Link href='/'>
+            <div className="Button">
+              <span>Ver templates</span>
+            </div>
+          </Link>
+          </div>
         </div>
       </div>
       <style jsx>{`
@@ -43,11 +36,18 @@ export default function Formulario() {
           gap: 40px;
           background: var(--velier-color);
         }
+        .InfoContent
+        {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          height: auto;
+        }
         .FormContainerDetails
         {
           display: flex;
           flex-direction: column;
-          width: 50%;
+          width: 100%;
           height: auto;
           justify-content: center;
           align-items: left;
@@ -73,7 +73,7 @@ export default function Formulario() {
           font-style: normal;
           font-family: var(--primary-font)
         }
-        .FormContent
+        .ImageContent
         {
           display: flex;
           width: 600px;
@@ -84,16 +84,11 @@ export default function Formulario() {
           box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.2);
           background: #fff;
         }
-        .calendly-inline-widget
+        .ImageContent img
         {
           width: 100%;
-          min-width: 280px;
-          height: 500px;
-          background: none;
-          border-radius: 20px;
-        }
-        .calendly-inline-widget::-webkit-scrollbar{
-          display: none;
+          height: auto;
+          object-fit: cover;
         }
         @media only screen and (max-width: 800px)
         {
@@ -112,7 +107,7 @@ export default function Formulario() {
             font-size: 30px;
             line-height: 40px;
           }
-          .FormContent
+          .ImageContent
           {
             width: 100%;
           }
