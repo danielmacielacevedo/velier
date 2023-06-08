@@ -12,11 +12,9 @@
   --primary-font: 'Poppins', sans-serif;
   --secondary-font: 'Inter', sans-serif;
 
-  --dynamic-logo: '/assets/wearevelier-light.png';
-
   #HeaderLogo
   {
-    background-image: url('/assets/wearevelier-dark.png');
+    background-image: url('https://www.wearevelier.com/assets/wearevelier-dark.png');
   }
 
 }
@@ -31,7 +29,7 @@
 
   #HeaderLogo
   {
-    background-image: url('/assets/wearevelier-light.png');
+    background-image: url('https://www.wearevelier.com/assets/wearevelier-light.png');
   }
 
   }
