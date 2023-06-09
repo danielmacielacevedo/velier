@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Lottie from 'react-lottie';
 import TopIcon from '../../public/assets/icons/animated-icons/top-arrow-hover-light.json'
-import Benefits from '../components/Benefits'
+import BenefitsSmall from '../components/BenefitsSmall'
 
 const words = [ 'CLÍNICA', 'CONSULTORIO', 'SALÓN', 'ESTUDIO', 'AGENCIA', 'DESPACHO'];
 // const words = [ 'Tu clínica', 'Tu consultorio', 'Tu salón', 'Tu estudio', 'Tu agencia', 'Tu despacho'];
@@ -34,7 +34,6 @@ export default function Cover() {
               height='4vw'
               isClickToPauseDisabled
             />
-            {/* <h1>POTENCIAMOS</h1> */}
             <p>...potenciamos tu</p>
             <div>
               <motion.div
@@ -67,7 +66,6 @@ export default function Cover() {
               height='8vw'
               isClickToPauseDisabled
             />
-            {/* <h1>POTENCIAMOS</h1> */}
             <p>...potenciamos tu</p>
             <div>
               <motion.div
@@ -89,8 +87,8 @@ export default function Cover() {
               </motion.div>
             </div>
           </div>
+          <BenefitsSmall />
         </div>
-        <Benefits />
       </div>
       <style jsx>{`
         .CoverContainer
@@ -100,24 +98,21 @@ export default function Cover() {
           flex-direction: column;
           width: 100%;
           height: 70vh;
-          min-height: 400px;
-          justify-content: center;
+          min-height: 500px;
+          justify-content: end;
           align-items: center;
           background-image: url(https://images.unsplash.com/photo-1664575599736-c5197c684128?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80);
           background-size: cover;
           background-position: center top;
           background-repeat: no-repeat;
-          {/* background-image: url(https://images.unsplash.com/photo-1543269664-7eef42226a21?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80); */}
         }
         .TitleCoverContainer
         {
-          position: absolute;
-          top: 20vh;
+          bottom: 0;
           display: flex;
           width: 100%;
           height: fit-content;;
           flex-direction: column;
-          gap: 8px;
           justify-content: center;
           align-items: center;
         }
@@ -146,7 +141,7 @@ export default function Cover() {
         {
           .CoverContainer
           {
-            height: 70vh;
+            height: 90vh;
             min-height: 200px;
           }
           .TitleCoverContainer
@@ -164,6 +159,17 @@ export default function Cover() {
           .MotionDiv.Mobile
           {
             display: flex;
+          }
+        }
+        @media only screen and (max-width: 350px)
+        {
+          .CoverContainer
+          {
+            justify-content: center;
+          }
+          p,
+          {
+            font-size: 12px;
           }
         }
       `}</style>

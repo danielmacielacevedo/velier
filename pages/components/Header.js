@@ -30,11 +30,6 @@ export default function HeaderGeneral() {
         <div ref={headerRef} className="NavFull">
           <Link href="/">
             <i ref={logoRef} id="HeaderLogo"></i>
-            {/* <img
-              src="/assets/wearevelier.png"
-              alt="Logo We Are Velier"
-              // className={router.pathname === "/" ? "LogoOpacity" : ""}
-            /> */}
           </Link>
 
           <div className="NavNavigation">
@@ -45,10 +40,10 @@ export default function HeaderGeneral() {
                     <Link href="/">Inicio</Link>
                   </li>
                   <li>
-                    <Link href="/blog">Templates</Link>
+                    <Link href="/">Templates</Link>
                   </li>
                   <li>
-                    <Link href="/info">Contacto</Link>
+                    <Link href="/">Contacto</Link>
                   </li>
                 </ul>
               </div>
@@ -72,12 +67,12 @@ export default function HeaderGeneral() {
                   </Link>
                 </li>
                 <li>
-                  <Link onClick={handleBurgerClick} href="/blog">
+                  <Link onClick={handleBurgerClick} href="/">
                     Templates
                   </Link>
                 </li>
                 <li>
-                  <Link onClick={handleBurgerClick} href="/info">
+                  <Link onClick={handleBurgerClick} href="/">
                     Contacto
                   </Link>
                 </li>

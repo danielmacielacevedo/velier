@@ -20,8 +20,8 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: #ffffff;
-    --background-start-rgb: #000000;
-    --background-end-rgb: #000000;
+    --background-start-rgb: #1e1e1e;
+    --background-end-rgb: #1e1e1e;
 
   --grey-color: #3e3e3e7c;
   --grey-full: #3e3e3e;
@@ -121,7 +121,8 @@ a {
   width: auto;
   height: 30px;
 }
-#HeaderLogo
+#HeaderLogo,
+#HeaderLogoFooter
 {
   background-image: var(--dynamic-logo);
   width: 90px;
@@ -244,6 +245,22 @@ a {
   font-size: 20px;
   color: var(--secondary-color);
 }
+#DesktopItem
+{
+  display: flex;
+}
+.MobileItem
+{
+  display: none;
+}
+
+.FlexColumn
+{
+  display: flex;
+  max-width: 350px;
+  flex-direction: column;
+  gap: 20px;
+}
 
 @media only screen and (max-width: 800px)
 {
@@ -257,6 +274,18 @@ a {
     display: flex;
   }
   .MenuMobileContainer
+  {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 350px)
+{
+  #DesktopItem
+  {
+    display: none;
+  }
+  .MobileItem
   {
     display: flex;
   }
