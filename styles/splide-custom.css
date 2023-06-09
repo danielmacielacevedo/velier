@@ -7,6 +7,11 @@
     background: #fff;
 }
 
+.splide__arrow svg
+{
+    fill: #3e3e3e;
+}
+
 @media only screen and (max-width: 800px)
 {
     .splide__arrow

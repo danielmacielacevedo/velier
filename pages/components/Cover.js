@@ -47,7 +47,7 @@ export default function Cover() {
                   fontSize: '9vw', 
                   fontFamily: 'Poppins', 
                   fontWeight: '700',
-                  color: 'var(--grey-full)', 
+                  color: '#fff', 
                   marginTop: '-2vw', 
                   textShadow: '5px 5px 100px rgba(0, 0, 0, .4)' 
                 }}
@@ -80,7 +80,7 @@ export default function Cover() {
                   fontSize: '12vw', 
                   fontFamily: 'Poppins', 
                   fontWeight: '700',
-                  color: 'var(--grey-full)', 
+                  color: '#fff', 
                   marginTop: '-2vw', 
                   textShadow: '5px 5px 100px rgba(0, 0, 0, .4)' 
                 }}
@@ -103,10 +103,11 @@ export default function Cover() {
           min-height: 400px;
           justify-content: center;
           align-items: center;
-          background-image: url(https://images.unsplash.com/photo-1543269664-7eef42226a21?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80);
+          background-image: url(https://images.unsplash.com/photo-1664575599736-c5197c684128?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80);
           background-size: cover;
-          background-position: center;
+          background-position: center top;
           background-repeat: no-repeat;
+          {/* background-image: url(https://images.unsplash.com/photo-1543269664-7eef42226a21?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80); */}
         }
         .TitleCoverContainer
         {
