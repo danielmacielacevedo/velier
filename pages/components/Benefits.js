@@ -29,7 +29,7 @@ export default function Benefits() {
     return (
         <>
             <div className="BenefitsContainer">
-                <p>¿Por qué tener una web?</p>
+                <p className='BenefitsTitle'>¿Por qué tener una web?</p>
                 <div ref={sliderRef} className="splide">
                 <div className="splide__track">
                     <ul className="splide__list">
@@ -89,6 +89,11 @@ export default function Benefits() {
                     height: auto;
                     gap: 20px;
                     text-align: center;
+                }
+                h3,
+                p
+                {
+                    color: #fff;
                 }
                 .splide__slide article
                 {
