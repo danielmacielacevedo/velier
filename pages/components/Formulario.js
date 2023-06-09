@@ -18,7 +18,7 @@ export default function Formulario() {
         <div className='FormContent'>
           <div
             className="calendly-inline-widget"
-            data-url="https://calendly.com/velier/agendar-cita?hide_event_type_details=1&hide_gdpr_banner=1&primary_color=0065ff&background_color=fff"
+            data-url="https://calendly.com/velier/agendar-cita?hide_event_type_details=1&hide_gdpr_banner=1&primary_color=000&background_color=fff"
           ></div>
         </div>
         <div className='FormContainerDetails'>
@@ -41,7 +41,7 @@ export default function Formulario() {
           align-items: center;
           padding: 20px 20px 20px 0;
           gap: 40px;
-          background: var(--velier-color);
+          background: var(--grey-color);
         }
         .FormContainerDetails
         {
@@ -53,7 +53,7 @@ export default function Formulario() {
           align-items: left;
           gap: 40px;
           text-align: left;
-          color: #fff;
+          {/* color: #fff; */}
         }
         .FormContainerDetails span
         {

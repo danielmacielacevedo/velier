@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Lottie from 'react-lottie';
-import TopIcon from '../../public/assets/icons/animated-icons/top-arrow-hover.json'
+import TopIcon from '../../public/assets/icons/animated-icons/top-arrow-hover-light.json'
+import Benefits from '../components/Benefits'
 
 const words = [ 'CLÍNICA', 'CONSULTORIO', 'SALÓN', 'ESTUDIO', 'AGENCIA', 'DESPACHO'];
 // const words = [ 'Tu clínica', 'Tu consultorio', 'Tu salón', 'Tu estudio', 'Tu agencia', 'Tu despacho'];
@@ -34,7 +35,7 @@ export default function Cover() {
               isClickToPauseDisabled
             />
             {/* <h1>POTENCIAMOS</h1> */}
-            <h1>...potenciamos tu</h1>
+            <p>...potenciamos tu</p>
             <div>
               <motion.div
                 key={index}
@@ -46,7 +47,7 @@ export default function Cover() {
                   fontSize: '9vw', 
                   fontFamily: 'Poppins', 
                   fontWeight: '700',
-                  color: 'var(--velier-color)', 
+                  color: 'var(--grey-full)', 
                   marginTop: '-2vw', 
                   textShadow: '5px 5px 100px rgba(0, 0, 0, .4)' 
                 }}
@@ -67,7 +68,7 @@ export default function Cover() {
               isClickToPauseDisabled
             />
             {/* <h1>POTENCIAMOS</h1> */}
-            <h1>...potenciamos tu</h1>
+            <p>...potenciamos tu</p>
             <div>
               <motion.div
                 key={index}
@@ -79,7 +80,7 @@ export default function Cover() {
                   fontSize: '12vw', 
                   fontFamily: 'Poppins', 
                   fontWeight: '700',
-                  color: 'var(--velier-color)', 
+                  color: 'var(--grey-full)', 
                   marginTop: '-2vw', 
                   textShadow: '5px 5px 100px rgba(0, 0, 0, .4)' 
                 }}
@@ -89,20 +90,28 @@ export default function Cover() {
             </div>
           </div>
         </div>
+        <Benefits />
       </div>
       <style jsx>{`
         .CoverContainer
         {
+          position: relative;
           display: flex;
           flex-direction: column;
           width: 100%;
-          height: 50vh;
+          height: 70vh;
           min-height: 400px;
           justify-content: center;
           align-items: center;
+          background-image: url(https://images.unsplash.com/photo-1543269664-7eef42226a21?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80);
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
         }
         .TitleCoverContainer
         {
+          position: absolute;
+          top: 20vh;
           display: flex;
           width: 100%;
           height: fit-content;;
@@ -128,11 +137,20 @@ export default function Cover() {
         {
           display: none;
         }
+        p
+        {
+          color: #fff;
+        }
         @media only screen and (max-width: 800px)
         {
           .CoverContainer
           {
-            min-height: 300px;
+            height: 70vh;
+            min-height: 200px;
+          }
+          .TitleCoverContainer
+          {
+            {/* top: 18vh; */}
           }
           .TitleCoverContainer h1
           {

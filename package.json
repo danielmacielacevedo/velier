@@ -10,6 +10,8 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@splidejs/splide": "^4.1.4",
+    "@splidejs/splide-extension-auto-scroll": "^0.5.3",
     "@vercel/analytics": "^1.0.1",
     "framer-motion": "^10.12.16",
     "next": "13.4.4",
