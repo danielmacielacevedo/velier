@@ -83,6 +83,8 @@ export default function Formulario() {
           overflow: hidden;
           box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.2);
           background: #fff;
+          transform: scale(.9);
+          margin-left: -30px;
         }
         .calendly-inline-widget
         {
