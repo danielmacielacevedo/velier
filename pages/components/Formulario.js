@@ -120,6 +120,14 @@ export default function Formulario() {
           }
 
         }
+        {/* @media only screen and (max-width: 350px)
+        {
+          .FormContent
+          {
+            width: 126%;
+            transform: scale(0.7);
+          }
+        } */}
       `}</style>
     </>
   );
