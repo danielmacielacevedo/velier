@@ -156,7 +156,8 @@ a {
   font-size: 34px;
 }
 #HeaderLogo.Open,
-#HeaderLogoTemplate.Open
+#HeaderLogoTemplate.Open,
+#HeaderLogoDentist.Open
 {
   opacity: 0;
 }
