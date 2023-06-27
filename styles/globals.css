@@ -132,10 +132,16 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
 }
-#HeaderLogo.Open
+#HeaderLogoTemplate
+{
+  font-size: 34px;
+}
+#HeaderLogo.Open,
+#HeaderLogoTemplate.Open
 {
   opacity: 0;
 }
+
 .LogoOpacity {
   opacity: 0;
 }

@@ -2,6 +2,8 @@ import Head from 'next/head'
 import Cover from './components/Cover'
 import Formulario from './components/Formulario'
 import Benefits from './components/Benefits'
+import Footer from './components/Footer'
+import HeaderGeneral from './components/Header'
 
 export default function Home() {
   return (
@@ -12,11 +14,13 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/assets/favicon.png" />
       </Head>
+      <HeaderGeneral />
       <Cover />
       <div className='MobileItem'>
         <Benefits />
       </div>
       <Formulario />
+      <Footer />
     </>
   )
 }
