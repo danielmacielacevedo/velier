@@ -37,6 +37,7 @@ export default function CoverDentist(props) {
           min-height: 500px;
           justify-content: end;
           align-items: center;
+          background-image: linear-gradient(to bottom, var(--background-contrast), rgba(0, 0, 0, 0));
         }
         .LinearGradient
         {
@@ -78,7 +79,7 @@ export default function CoverDentist(props) {
           justify-content: center;
           align-items: center;
           text-align: center;
-          padding: 20px 0;
+          padding: 20px;
         }
         .MotionDiv.Mobile
         {
@@ -92,7 +93,7 @@ export default function CoverDentist(props) {
           }
           .TitleCoverContainer h1
           {
-            font-size: 6vw;
+            font-size: 8vw;
           }
           .MotionDiv.Desktop
           {

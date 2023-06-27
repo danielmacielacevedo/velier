@@ -30,8 +30,8 @@ export default function Header(props) {
         <div ref={headerRef} className="NavFull">
           
           <div className="LogoContainer">
-            {/* <img src="/assets/icons/tooth.svg" /> */}
-            <h1 ref={logoRef} id="HeaderLogoTemplate">{props.logo}</h1>
+            <i ref={logoRef} id="HeaderLogoDentist"></i>
+            {/* <h1 ref={logoRef} id="HeaderLogoTemplate">{props.logo}</h1> */}
           </div>
 
           <div className="NavNavigation">

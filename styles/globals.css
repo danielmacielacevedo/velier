@@ -5,6 +5,7 @@
   --foreground-rgb: #3e3e3e;
   --background-start-rgb: #ffffff;
   --background-end-rgb: #ffffff;
+  --background-contrast: #ffffff;
 
   --velier-color: rgb(0, 101, 255); 
   --grey-color: #e6e6e67c;
@@ -14,6 +15,9 @@
   --secondary-font: 'Inter', sans-serif;
 
   --dynamic-logo: url('/assets/wearevelier-dark.png');
+  
+  
+  --dynamic-dentist-logo: url('/assets/icons/logo-dentist-dark.png');
 
 }
 
@@ -22,11 +26,16 @@
     --foreground-rgb: #ffffff;
     --background-start-rgb: #1e1e1e;
     --background-end-rgb: #1e1e1e;
+    --background-contrast: #000000;
 
   --grey-color: #3e3e3e7c;
   --grey-full: #3e3e3e;
 
   --dynamic-logo: url('/assets/wearevelier.png');
+
+
+  --dynamic-dentist-logo: url('/assets/icons/logo-dentist-light.png');
+
 
   }
 }
@@ -127,6 +136,16 @@ a {
   background-image: var(--dynamic-logo);
   width: 90px;
   height: 24.8px;
+  opacity: 1;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#HeaderLogoDentist
+{
+  background-image: var(--dynamic-dentist-logo);
+  width: 24.8px;
+  height: 27.8px;
   opacity: 1;
   background-position: center;
   background-size: cover;

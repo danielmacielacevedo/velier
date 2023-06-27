@@ -30,6 +30,7 @@ export default function Footer(props) {
 
         <div className="FooterContainer">
             <div className="FlexColumn">
+                <i id="HeaderLogoDentist"></i>
                 <h1 id="HeaderLogoTemplate">{props.logo}</h1>
                 <p>Descubre el poder de una sonrisa sana y hermosa.</p>
             </div>
