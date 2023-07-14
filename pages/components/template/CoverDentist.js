@@ -47,7 +47,7 @@ export default function CoverDentist(props) {
           position: absolute;
           bottom: 0;
           width: 100%;
-          height: 40%;
+          height: 60%;
           background-image: linear-gradient(to top, var(--background-start-rgb), rgba(0, 0, 0, 0));
         }
         .FeaturedImage
