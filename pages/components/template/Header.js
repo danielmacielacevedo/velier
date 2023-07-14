@@ -45,7 +45,7 @@ export default function Header(props) {
                     <a href="#agendar" >Agendar</a>
                   </li>
                   <li>
-                    <p >Contacto</p>
+                    <a href="#contacto" >Contacto</a>
                   </li>
 
 
@@ -86,9 +86,9 @@ export default function Header(props) {
                   </a>
                 </li>
                 <li>
-                  <p onClick={handleBurgerClick} >
+                  <a href="#contacto" onClick={handleBurgerClick} >
                     Contacto
-                  </p>
+                  </a>
                 </li>
 
 

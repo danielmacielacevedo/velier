@@ -7,6 +7,8 @@ import Header from '../components/template/Header';
 import Footer from '../components/template/Footer';
 import Gallery from '../components/Gallery';
 import LoveBar from '../components/template/LoveBar';
+import Map from '../components/template/Map';
+import Contacto from '../components/template/Contacto';
 
 export default function DentistPage() {
   
@@ -14,6 +16,12 @@ export default function DentistPage() {
   const { slug } = router.query;
 
   const title = slug ? slug.replace(/-/g, ' ') : 'Dentist';
+
+  const username = title
+  ? title.replace(/ /g, '').toLowerCase()
+  : '';
+  
+  console.log(username)
   const initials = slug
   ? slug
       .split('-')
@@ -34,6 +42,9 @@ export default function DentistPage() {
       <Gallery />
       <LoveBar title={title} />
       <Formulario />
+      {username && (
+        <Contacto username={username} />
+      )}
       <Footer logo={title} />
     </>
   );

@@ -37,9 +37,9 @@ export default function Footer(props) {
             <article>
                 <h3>Navegación</h3>
                 <ul>
-                    <li><p >Inicio</p></li>
-                    <li><p >Agendar</p></li>
-                    <li><p >Contacto</p></li>
+                    <li><a href="#inicio" >Inicio</a></li>
+                    <li><a href="#agendar" >Agendar</a></li>
+                    <li><a href="#contacto" >Contacto</a></li>
                 </ul>
             </article>
             <article>
