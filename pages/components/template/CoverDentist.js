@@ -21,7 +21,7 @@ export default function CoverDentist(props) {
               isClickToPauseDisabled
             /> */}
             <h1>{props.title}</h1>
-            <p>Descubre el poder de una sonrisa sana y hermosa.</p>
+            <p>Descubre el poder de una sonrisa sana.</p>
             <a className='PrimaryButton' href='#agendar'>
               Agenda tu cita
             </a>
