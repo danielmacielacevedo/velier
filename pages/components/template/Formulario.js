@@ -14,7 +14,7 @@ export default function Formulario() {
 
   return (
     <>
-      <div className='FormContainer'>
+      <div id='agendar' className='FormContainer'>
         <div className='FormContainerDetails'>
           <span>Agenda tu cita</span>
         </div>
@@ -77,8 +77,8 @@ export default function Formulario() {
           overflow: hidden;
           box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.2);
           background: #fff;
-          transform: scale(.9);
-          margin-left: -30px;
+          transform: scale(.8);
+          margin: -24px 0 -40px 0;
         }
         .calendly-inline-widget
         {
@@ -111,6 +111,8 @@ export default function Formulario() {
           {
             width: 100%;
             border-radius: 0 30px 30px 0;
+            margin-left: -18vw;
+            margin-top: -30px
           }
 
         }

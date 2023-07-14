@@ -4,8 +4,10 @@ import Formulario from './components/Formulario'
 import Benefits from './components/Benefits'
 import Footer from './components/Footer'
 import HeaderGeneral from './components/Header'
+import Gallery from './components/Gallery'
 
 export default function Home() {
+
   return (
     <>
       <Head>
@@ -19,6 +21,7 @@ export default function Home() {
       <div className='MobileItem'>
         <Benefits />
       </div>
+      <Gallery />
       <Formulario />
       <Footer />
     </>

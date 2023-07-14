@@ -5,7 +5,7 @@ export default function CoverDentist(props) {
 
   return (
     <>
-      <div className='CoverContainer'>
+      <div id='inicio' className='CoverContainer'>
         <div className='LinearGradient'></div>
         <img className='FeaturedImage' src='/assets/template-images/dentist-image.png' />
         <div className='TitleCoverContainer'>
@@ -21,7 +21,10 @@ export default function CoverDentist(props) {
               isClickToPauseDisabled
             /> */}
             <h1>{props.title}</h1>
-            <p>Sonríe sin preocupaciones, estamos aquí para cuidar tu sonrisa.</p>
+            <p>Descubre el poder de una sonrisa sana y hermosa.</p>
+            <a className='PrimaryButton' href='#agendar'>
+              Agendar cita
+            </a>
           </div>
         </div>
       </div>
@@ -29,7 +32,7 @@ export default function CoverDentist(props) {
         .CoverContainer
         {
           position: relative;
-          z-index: -2;
+          z-index: 0;
           display: flex;
           flex-direction: column;
           width: 100%;
@@ -58,7 +61,7 @@ export default function CoverDentist(props) {
         .TitleCoverContainer
         {
           bottom: 0;
-          z-index: 1;
+          z-index: 2;
           display: flex;
           width: 100%;
           height: fit-content;;
@@ -66,13 +69,10 @@ export default function CoverDentist(props) {
           justify-content: center;
           align-items: center;
         }
-        .TitleCoverContainer h1
-        {
-          font-size: 4vw;
-          font-weight: 300;
-        }
         .MotionDiv
         {
+          position: relative;
+          z-index: 1;
           display: flex;
           flex-direction: column;
           width: 100%;
@@ -80,6 +80,13 @@ export default function CoverDentist(props) {
           align-items: center;
           text-align: center;
           padding: 20px;
+          gap: 20px;
+        }
+        .TitleCoverContainer h1
+        {
+          font-size: 4vw;
+          font-weight: 300;
+          margin-bottom: -20px;
         }
         .MotionDiv.Mobile
         {
@@ -106,10 +113,6 @@ export default function CoverDentist(props) {
         }
         @media only screen and (max-width: 350px)
         {
-          .CoverContainer
-          {
-            justify-content: center;
-          }
           p,
           {
             font-size: 12px;

@@ -39,10 +39,10 @@ export default function Header(props) {
               <div className="NavLinksContainer">
                 <ul className="NavLinks">
                   <li>
-                    <p >Inicio</p>
+                    <a href="#inicio" >Inicio</a>
                   </li>
                   <li>
-                    <p >Agendar</p>
+                    <a href="#agendar" >Agendar</a>
                   </li>
                   <li>
                     <p >Contacto</p>
@@ -76,14 +76,14 @@ export default function Header(props) {
             <div className="MenuMobileLinksContainer">
               <ul className="MenuMobileLinks">
                 <li>
-                  <p onClick={handleBurgerClick} >
+                  <a href="#inicio" onClick={handleBurgerClick} >
                     Inicio
-                  </p>
+                  </a>
                 </li>
                 <li>
-                  <p onClick={handleBurgerClick} >
-                    Templates
-                  </p>
+                  <a href="#agendar" onClick={handleBurgerClick} >
+                    Agendar
+                  </a>
                 </li>
                 <li>
                   <p onClick={handleBurgerClick} >

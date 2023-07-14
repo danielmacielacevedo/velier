@@ -5,8 +5,11 @@ import Benefits from '../components/Benefits';
 import CoverDentist from '../components/template/CoverDentist';
 import Header from '../components/template/Header';
 import Footer from '../components/template/Footer';
+import Gallery from '../components/Gallery';
+import LoveBar from '../components/template/LoveBar';
 
 export default function DentistPage() {
+  
   const router = useRouter();
   const { slug } = router.query;
 
@@ -28,9 +31,8 @@ export default function DentistPage() {
       </Head>
       <Header logo={initials} />
       <CoverDentist title={title} />
-      <div className='MobileItem'>
-        <Benefits />
-      </div>
+      <Gallery />
+      <LoveBar title={title} />
       <Formulario />
       <Footer logo={title} />
     </>
