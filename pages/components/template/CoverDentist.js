@@ -23,7 +23,7 @@ export default function CoverDentist(props) {
             <h1>{props.title}</h1>
             <p>Descubre el poder de una sonrisa sana y hermosa.</p>
             <a className='PrimaryButton' href='#agendar'>
-              Agendar cita
+              Agenda tu cita
             </a>
           </div>
         </div>
