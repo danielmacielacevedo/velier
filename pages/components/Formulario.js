@@ -29,6 +29,10 @@ export default function Formulario() {
             <li><p>Enviamos mensajes SMS a tus clientes antes de la cita agendada como recordatorio.</p></li>
             <li><p>Ahorra tiempo valioso.</p></li>
           </ul>
+          <div className='TryIt'>
+            <i></i>
+            <h3>Pruébalo</h3>
+          </div>
         </div>
       </div>
       <style jsx>{`
@@ -73,6 +77,41 @@ export default function Formulario() {
           font-style: normal;
           font-family: var(--primary-font)
         }
+        .TryIt
+        {
+          position: relative;
+          display: flex;
+          width: fit-content;
+          padding-left: 20px;
+          gap: 20px;
+        }
+        .TryIt i
+        {
+          position: absolute;
+          display: flex;
+          width: 20px;
+          height: 20px;
+          background-image: url(/assets/icons/arrow-left.png);
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          animation: movimiento 2s infinite ease-in-out;
+        }
+        @keyframes movimiento 
+        {
+          0% {
+            left: 0;
+            bottom: 1px;
+          }
+          50% {
+            left: -20px;
+            bottom: 1px;
+          }
+          100% {
+            left: 0;
+            bottom: 1px;
+          }
+        }
         .FormContent
         {
           display: flex;
@@ -83,8 +122,10 @@ export default function Formulario() {
           overflow: hidden;
           box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.2);
           background: #fff;
-          transform: scale(.9);
-          margin-left: -30px;
+          transform: scale(0.8);
+          margin-left: -60px;
+          margin-top: -30px;
+          margin-bottom: -40px;
         }
         .calendly-inline-widget
         {
@@ -114,9 +155,33 @@ export default function Formulario() {
             font-size: 30px;
             line-height: 40px;
           }
+          .TryIt
+          {
+            flex-direction: column-reverse;
+            padding-left: 0;
+            justify-content: center;
+            align-items: center;
+          }
+          .TryIt i
+          {
+            transform: rotate(-90deg);
+          }
+          @keyframes movimiento 
+          {
+            0% {
+              bottom: -22px;
+            }
+            50% {
+              bottom: -40px;
+            }
+            100% {
+              bottom: -22px;
+            }
+          }
           .FormContent
           {
             width: 100%;
+            margin-left: -18vw;
           }
 
         }

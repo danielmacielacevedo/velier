@@ -4,7 +4,9 @@ import Formulario from './components/Formulario'
 import Benefits from './components/Benefits'
 import Footer from './components/Footer'
 import HeaderGeneral from './components/Header'
-import Gallery from './components/Gallery'
+// import Gallery from './components/Gallery'
+import SliderGalleryL from './components/SliderGalleryL'
+import SliderGalleryR from './components/SliderGalleryR'
 
 export default function Home() {
 
@@ -21,8 +23,10 @@ export default function Home() {
       <div className='MobileItem'>
         <Benefits />
       </div>
-      <Gallery />
       <Formulario />
+      <SliderGalleryL />
+      <SliderGalleryR />
+      <SliderGalleryL />
       <Footer />
     </>
   )
