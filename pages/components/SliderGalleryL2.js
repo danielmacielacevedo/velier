@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function SliderGalleryR() {
+export default function SliderGalleryL2() {
   const imageURL = 'https://images.unsplash.com/photo-1664575599736-c5197c684128?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80';
 
   return (
@@ -65,7 +65,7 @@ export default function SliderGalleryR() {
       </div>
 
       <style jsx>{`
-      .slider {
+        .slider {
           height: 140px;
           position: relative;
           width: 100%;
@@ -78,19 +78,19 @@ export default function SliderGalleryR() {
         .slide-track {
           display: flex;
           width: calc(250px * 18);
-          animation: scrollR 40s linear infinite;
+          animation: scroll 40s linear infinite;
         }
 
         .slide-track:hover {
           animation-play-state: paused;
         }
 
-        @keyframes scrollR {
+        @keyframes scroll {
           0% {
-            transform: translateX(calc(-250px * 9));
+            transform: translateX(0);
           }
           100% {
-            transform: translateX(0);
+            transform: translateX(calc(-250px * 9));
           }
         }
 

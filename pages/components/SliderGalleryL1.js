@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function SliderGalleryL() {
+export default function SliderGalleryL1() {
   const imageURL = 'https://images.unsplash.com/photo-1664575599736-c5197c684128?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80';
 
   return (
@@ -72,6 +72,7 @@ export default function SliderGalleryL() {
           display: grid;
           place-items: center;
           overflow: hidden;
+          margin-top: 20px;
         }
 
         .slide-track {
@@ -100,18 +101,19 @@ export default function SliderGalleryL() {
           align-items: center;
           padding: 15px;
           perspective: 100px;
+          cursor: pointer;
         }
 
         img {
           width: 100%;
           height: 120px;
           object-fit: cover;
-          transition: transform 1s;
+          transition: transform .5s;
           border-radius: 20px;
         }
 
         img:hover {
-          transform: translateZ(10px);
+          transform: scale(1.1);
         }
 
         .slider::before,

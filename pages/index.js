@@ -5,8 +5,9 @@ import Benefits from './components/Benefits'
 import Footer from './components/Footer'
 import HeaderGeneral from './components/Header'
 // import Gallery from './components/Gallery'
-import SliderGalleryL from './components/SliderGalleryL'
+import SliderGalleryL1 from './components/SliderGalleryL1'
 import SliderGalleryR from './components/SliderGalleryR'
+import SliderGalleryL2 from './components/SliderGalleryL2'
 
 export default function Home() {
 
@@ -24,9 +25,9 @@ export default function Home() {
         <Benefits />
       </div>
       <Formulario />
-      <SliderGalleryL />
+      <SliderGalleryL1 />
       <SliderGalleryR />
-      <SliderGalleryL />
+      <SliderGalleryL2 />
       <Footer />
     </>
   )
